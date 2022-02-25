@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <main>
+        <div id="messages">
+          <template id="message-template">
+            <div class="message">
+              <div class="username"></div>
+              <div class="text"></div>
+            </div>
+          </template>
+        </div>
+        <form id="message-form">
+          <input
+            required
+            type="text"
+            name="username"
+            maxlength="19"
+            placeholder="Your name"
+            autocomplete="off"
+          >
+          <input
+            required
+            type="text"
+            name="message"
+            autocomplete="off"
+            placeholder="You message"
+            autofocus
+          >
+          <button type="submit">
+            Send
+          </button>
+        </form>
+    </main>
+  </body>
+</html>
